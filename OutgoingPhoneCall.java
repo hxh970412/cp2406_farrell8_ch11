@@ -4,7 +4,7 @@ public class OutgoingPhoneCall extends PhoneCall{
     public OutgoingPhoneCall(String num, int min)
     {
         super(num);
-        price = PATE;
+        price = PATE * minute;
         minute = min;
     }
 

@@ -1,0 +1,15 @@
+public class InternationalDivision extends Division {
+    protected String country;
+    protected String language;
+    public InternationalDivision(String title, int acct, String city, String lang)
+    {
+        super(title, acct);
+        country = city;
+        language = lang;
+    }
+    public void display()
+    {
+        System.out.println("International Division: " + divisionTitle + " Acct #" + acctNum +
+                "\nLocated in " + country + "Language is " + language);
+    }
+}
